@@ -1,0 +1,40 @@
+
+.chart {
+    display: flex;
+    align-items: flex-end;
+    height: 100px; /* Đặt chiều cao tối đa cho biểu đồ */
+    width: 100%; /* Đặt chiều rộng tối đa cho biểu đồ */
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden; /* Đảm bảo rằng nội dung thừa sẽ bị ẩn */
+}
+
+.bar {
+    width: 8px; /* Đặt chiều rộng cố định cho các cột */
+    margin: 0 2px;
+    background-color: #4078FF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #000;
+    font-size: 10px;
+    position: relative;
+}
+
+.bar span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    visibility: hidden; /* Ẩn giá trị mặc định */
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.bar:hover span {
+    visibility: visible; /* Hiển thị giá trị khi hover */
+    opacity: 1;
+}
