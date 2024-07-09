@@ -94,18 +94,18 @@
                 <div style="border-top: 1px solid #E6E7E8; position: relative;"></div>
             </div>
             <div>
-                <form>
+                <form method="post" action="/signup/add">
                     <div class="mb-3">
                         <label for="InputName" class="form-label text_f14">Username</label>
-                        <input type="text" class="form-control" id="InputName" >
+                        <input type="text" class="form-control" id="InputName" name="username">
                     </div>
                     <div class="mb-3">
                         <label for="InputEmail1" class="form-label text_f14">Email</label>
-                        <input type="email" class="form-control" id="InputEmail1" >
+                        <input type="email" class="form-control" id="InputEmail1" name="email">
                     </div>
                     <div class="mb-3">
                         <label for="InputPassword1" class="form-label text_f14">Password</label>
-                        <input type="password" class="form-control" id="InputPassword1">
+                        <input type="password" class="form-control" id="InputPassword1" name="password">
                     </div>
                     <div class="text-start mb-4" style=" color: #5C5F6A; font-size: 12px;">
                         By creating an account you agree with our Terms of Service, Privacy Policy.
@@ -114,7 +114,7 @@
                         <button type="submit" style="border-radius: 4px; width: 100%; background-color: #000; color: #fff; padding: 8px;" class="btn btn-primary text_f14">Create account</button>
                     </div>
                     <div class="text-center mb-4">
-                        <a href="./login.html" style="text-decoration: none; color: #5C5F6A; font-size: 14px;">Already have an account? Log in</a>
+                        <a href="/login" style="text-decoration: none; color: #5C5F6A; font-size: 14px;">Already have an account? Log in</a>
                     </div>
                 </form>
             </div>

@@ -25,8 +25,8 @@ class SecurityConfig{
         http
                 .addFilterBefore(customAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests(authorize -> authorize
-                        .requestMatchers(HttpMethod.GET,"/", "/ecommerce/home", "/login", "/admin/login", "/resources/**","/WEB-INF/views/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/login-user","/login-admin").permitAll()
+                        .requestMatchers(HttpMethod.GET,"/", "/ecommerce/home", "/login", "/signup","/admin/login", "/resources/**","/WEB-INF/views/**").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/login-user","/login-admin", "/signup/add").permitAll()
                         .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin

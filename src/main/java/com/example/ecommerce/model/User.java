@@ -1,8 +1,11 @@
 package com.example.ecommerce.model;
 
 
+import com.fasterxml.jackson.databind.DatabindException;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.Date;
 
 @Getter
 @Setter
@@ -19,5 +22,8 @@ public class User {
     private String passwordHash;
     private String email;
     private String role;
+    private String status;
+    private Date createdAt;
+    private Date lastModified;
 
 }
