@@ -74,6 +74,7 @@ public class CheckoutController {
     @GetMapping("/ecommerce/checkout/change-address")
     public String changeAddress(Model model, @RequestParam(name = "idDetail") Integer idDetail, HttpServletRequest request) {
         detailId = idDetail;
+        totalPrice = 0;
         //get url request
         String referer = request.getHeader("referer");
         //reload page

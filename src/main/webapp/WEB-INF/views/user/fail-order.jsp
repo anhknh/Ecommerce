@@ -99,7 +99,7 @@
                 </div>
                 <div>
                     <div style="background-color: #000; padding: 8px 26px; display: inline-block; border-radius: 5px;">
-                        <a href="./cart.html" style="text-decoration: none; color:#fff; font-size: 18px;"> Reorder
+                        <a href="/ecommerce/cart" style="text-decoration: none; color:#fff; font-size: 18px;"> Reorder
                             &#8594</a>
                     </div>
                 </div>
